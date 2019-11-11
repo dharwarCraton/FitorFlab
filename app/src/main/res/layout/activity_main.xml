@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:divider="@android:drawable/divider_horizontal_bright"
@@ -12,50 +13,210 @@
 
 
     <RelativeLayout
-        android:id="@+id/weightsLayout"
+        android:id="@+id/weightsButton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/colorWeight"
-        android:gravity="center">
+        android:backgroundTint="@color/colorWeight">
 
-        <ImageView
+        <TextView
+            android:id="@+id/weight_bottomLeft2_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/weight" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/weight_bottomLeft2_text"
+            android:textColor="#D6D3D3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weight_bottomLeft1_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/weight_bottomLeft1_text"
+            android:textColor="#D6D3D3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/weight_bottom_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/weight_top_textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="15dp"
+            android:text="@string/weight_bottomRight_text"
+            android:textColor="#D6D3D3"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/weight_top_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#66FFFFFF"
+            android:gravity="top"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/weight_top_text"
+            android:textColor="@android:color/secondary_text_material_light"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/weight_weights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:src="@drawable/weight"
+            android:layout_centerInParent="true"/>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/yogaLayout"
+        android:id="@+id/yogaButton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/colorWeight"
-        android:gravity="center">
+        android:backgroundTint="@color/colorYoga">
 
-        <ImageView
+        <TextView
+            android:id="@+id/yoga_bottomLeft2_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/weight" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/yoga_bottomLeft2_text"
+            android:textColor="#D6D3D3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/yoga_bottomLeft1_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/yoga_bottomLeft1_text"
+            android:textColor="#D6D3D3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/yoga_bottom_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="15dp"
+            android:text="@string/yoga_bottomRight_text"
+            android:textColor="#D6D3D3"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/yoga_top_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toStartOf="@id/yoga_bottom_textView"
+            android:background="#66FFFFFF"
+            android:gravity="top"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/yoga_top_text"
+            android:textColor="@android:color/secondary_text_material_light"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/yoga_lotus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/lotus" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/healthLayout"
+        android:id="@+id/healthButton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="@color/colorWeight"
-        android:gravity="center">
+        android:backgroundTint="@color/colorHealth">
 
-        <ImageView
+        <TextView
+            android:id="@+id/health_bottomLeft2_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/weight" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/health_bottomLeft2_text"
+            android:textColor="#D6D3D3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/health_bottomLeft1_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/health_bottomLeft1_text"
+            android:textColor="#D6D3D3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/health_bottom_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/health_top_textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="15dp"
+            android:text="@string/health_bottomRight_text"
+            android:textColor="#D6D3D3"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/health_top_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#66FFFFFF"
+            android:gravity="top"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/health_top_text"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/heart_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/heart" />
 
     </RelativeLayout>
 </LinearLayout>

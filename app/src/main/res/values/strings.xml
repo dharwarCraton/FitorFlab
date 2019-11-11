@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Fit or Flab</string>
+    <string name="weight_bottomLeft1_text">Weightlifting</string>
+    <string name="yoga_bottomLeft1_text">Om Shanti</string>
+    <string name="health_bottomLeft1_text">Cardio</string>
+
+    <string name="weight_bottomLeft2_text">Do you even lift?</string>
+    <string name="yoga_bottomLeft2_text">Namaste</string>
+    <string name="health_bottomLeft2_text">Run like crazy</string>
+
+    <string name="weight_top_text">10 sets</string>
+    <string name="yoga_top_text">1 hour</string>
+    <string name="health_top_text">5 miles</string>
+
+    <string name="weight_bottomRight_text">30%</string>
+    <string name="yoga_bottomRight_text">15%</string>
+    <string name="health_bottomRight_text">22%</string>
+
 </resources>
