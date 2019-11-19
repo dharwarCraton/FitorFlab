@@ -7,4 +7,6 @@
     <color name="colorYoga">#916bcd</color>
     <color name="colorHealth">#83AD52</color>
     <color name="colorMaterialMimic">#5F566D</color>
+    <color name="colorDetailTitle">#D3EFEAF8</color>
+    <color name="colorDetailCheckbox">#20000000</color>
 </resources>

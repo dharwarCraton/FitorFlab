@@ -16,4 +16,10 @@
     <string name="yoga_bottomRight_text">15%</string>
     <string name="health_bottomRight_text">22%</string>
 
+    <string name="weights_detail_title">Weight Lifting</string>
+    <string name="yoga_detail_title">Yoga</string>
+    <string name="health_detail_title">Cardio</string>
+
+    <string name="mark_it_complete">Mark It Complete!</string>
+
 </resources>
