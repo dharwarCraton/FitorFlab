@@ -21,5 +21,10 @@
     <string name="health_detail_title">Cardio</string>
 
     <string name="mark_it_complete">Mark It Complete!</string>
+    <string name="weights_detail_checkbox1">Complete Set 1</string>
+    <string name="weights_detail_checkbox2">Complete Set 2</string>
+    <string name="weights_detail_checkbox3">Complete Set 3</string>
+    <string name="weights_detail_checkbox4">Complete Set 4</string>
+    <string name="weights_detail_checkbox5">Complete Set 5</string>
 
 </resources>

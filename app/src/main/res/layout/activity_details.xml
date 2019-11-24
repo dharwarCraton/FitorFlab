@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
+    android:background="@color/colorWeight"
     android:orientation="vertical"
-    android:background="@color/colorWeight">
+    tools:context=".DetailActivity">
 
     <TextView
+        android:id="@+id/exerciseTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:gravity="center"
         android:text="@string/weights_detail_title"
         android:textColor="@color/colorDetailTitle"
-        android:textSize="30sp"
-        android:layout_marginTop="70dp"/>
+        android:textSize="30sp" />
 
     <ImageView
+        android:id="@+id/exerciseImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/weight"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/weight" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +44,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="TextView"
+            android:text="@string/weights_detail_title"
             android:textColor="@color/colorDetailTitle"
             android:textSize="30sp"
             tools:text="@string/mark_it_complete" />
@@ -53,7 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingStart="75dp"
-            android:text="Complete set 1"
+            android:paddingEnd="15dp"
+            android:text="@string/weights_detail_checkbox1"
             android:textColor="@color/colorDetailTitle"
             android:textSize="24sp" />
 
@@ -63,7 +66,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingStart="75dp"
-            android:text="Complete set 1"
+            android:paddingEnd="15dp"
+            android:text="@string/weights_detail_checkbox2"
             android:textColor="@color/colorDetailTitle"
             android:textSize="24sp" />
 
@@ -73,7 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingStart="75dp"
-            android:text="Complete set 1"
+            android:paddingEnd="15dp"
+            android:text="@string/weights_detail_checkbox3"
             android:textColor="@color/colorDetailTitle"
             android:textSize="24sp" />
 
@@ -83,7 +88,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingStart="75dp"
-            android:text="Complete set 1"
+            android:paddingEnd="15dp"
+            android:text="@string/weights_detail_checkbox4"
             android:textColor="@color/colorDetailTitle"
             android:textSize="24sp" />
 
@@ -93,7 +99,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingStart="75dp"
-            android:text="Complete set 1"
+            android:paddingEnd="15dp"
+            android:text="@string/weights_detail_checkbox5"
             android:textColor="@color/colorDetailTitle"
             android:textSize="24sp" />
     </LinearLayout>
